@@ -1,6 +1,6 @@
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
+# from __future__ import absolute_import
+# from __future__ import division
+# from __future__ import print_function
 
 import cv2
 import time
@@ -14,8 +14,9 @@ import tensorflow as tf
 
 # TOM: hack to import from submodule without __init.py__ (can we fix it?)
 import sys
-ROOT_PATH = '/home/tommaso/FalsifyNN/neural_nets/squeezeDet/'
-sys.path.append(ROOT_PATH + 'src')
+ROOT_PATH = '/Users/frappuccino_o/dev/FalsifyNN/neural_nets/squeezeDet/'
+cfg_folder = os.path.realpath(ROOT_PATH + 'src')
+sys.path.append(cfg_folder)
 
 from config import *
 from train import _draw_box

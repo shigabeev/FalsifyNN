@@ -30,16 +30,20 @@ for i in range(134,182):
 
     for sample in samples:
         loc = generatePicture(Lib, [sample[0], sample[1], 1, 1, 1, 1], out_pic_name, i-130, 3)
+        loc = generatePicture(Lib, [sample[0], sample[1], 1, 1, 1, 1], out_pic_name+str(i)+".png", i-130, 3)
         confidence = nn.classify(out_pic_name, conf)
         print(confidence)
         if not confidence:
             score = 0
         else:
-            if confidence[0][0] == 0:
-                score = int(confidence[0][1]*100)
-            else:
-                score = 0
-        #print(score)
+            try:
+                if confidence[0][0][0] == 0:
+                    score = int(confidence[0][0][1]*100)
+                else:
+                    score = 0
+            except IndexError:
+                break
+        print(score)
         col = rgb(0,100,score)
         im = draw_circle(im, loc[0], loc[1], 5, col)
         w.writerow(sample+[score])

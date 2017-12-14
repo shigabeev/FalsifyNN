@@ -4,7 +4,7 @@ from populateLibrary import *
 from neural_nets import squeezedet as nn
 
 
-
+scene = [2, 2]
 # params[0]: car x pos
 # params[1]: car y pos
 # scene[0]: road
@@ -35,6 +35,8 @@ conf = nn.init()
 
 opt = bo_class(input_dim=2)
 opt.init_BO(f=wrapper)
+
+print "hello"
 
 for _ in range(10):
     opt.run_BO(max_iter=1)

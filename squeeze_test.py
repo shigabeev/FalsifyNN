@@ -9,7 +9,7 @@ import csv
 DIM = 2
 N_SAMPLES = 1000
 
-PIC_PATH = './pics/out/squeezetest/'
+PIC_PATH = 'pics/out/squeezetest/'
 
 roads = ['bridge', 'tunnel','island','country','hill']
 cars = ['fiat','honda','toyota','peugeot','chrysler']
@@ -28,7 +28,7 @@ road_i = 59
 car = cars[car_i-7]
 road = roads[road_i-57]
 
-print road + " / " + car
+print (road + " / " + car)
 
 gen_file_name = road + '_' + car + '_'
 
