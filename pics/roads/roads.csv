@@ -1,0 +1,11 @@
+Path,Name,vanishing point x,vanishing point y,low left x,low left y,low right x,low right y,center line x,center line y
+./pics/roads/desert_kitti.png, Desert Road,621,208,336,344,920,344,618,344
+./pics/roads/city_kitti.png, City Road,630,150,336,344,920,344,618,344
+./pics/roads/forest_kitti.png, Forest Road,672,238,200,430,656,430,436,430
+./pics/roads/big_sur_kitti.jpg, Big Sur Road,746,90,470,268,1072,268,753,268
+./pics/roads/mountain_kitti.jpg, Mountain Road,678,106,330,299,960,299,635,960
+./pics/roads/bridge_kitti.jpg, Bridge Road,627,105,399,254,900,254,629,254
+./pics/roads/tunnel_kitti.jpg, Tunnel Road,651,163,363,328,826,328,622,328
+./pics/roads/island_kitti.jpg, Island Road,616,179,386,315,864,315,607,315
+./pics/roads/countryside_kitti.jpg, Country Road,627,146,462,306,785,306,621,306
+./pics/roads/hill_kitti.jpg, Hill Road,613,166,382,314,846,314,617,314
